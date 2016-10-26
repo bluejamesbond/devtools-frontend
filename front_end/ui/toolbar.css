@@ -64,7 +64,9 @@
     .toolbar-dropdown-arrow {
         -webkit-mask-image: url(Images/toolbarButtonGlyphs_2x.png);
     }
-} /* media */
+}
+
+/* media */
 
 /* Toolbar item */
 
@@ -128,10 +130,12 @@
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.1) {
-.toolbar-glyph {
-    -webkit-mask-image: url(Images/toolbarButtonGlyphs_2x.png);
+    .toolbar-glyph {
+        -webkit-mask-image: url(Images/toolbarButtonGlyphs_2x.png);
+    }
 }
-} /* media */
+
+/* media */
 
 /* Button */
 
@@ -249,14 +253,16 @@ input.toolbar-item.hover {
     width: 28px;
     height: 24px;
     top: 0;
-    left:  0;
+    left: 0;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.1) {
-.long-click-glyph {
-    -webkit-mask-image: url(Images/toolbarButtonGlyphs_2x.png);
+    .long-click-glyph {
+        -webkit-mask-image: url(Images/toolbarButtonGlyphs_2x.png);
+    }
 }
-} /* media */
+
+/* media */
 
 .toolbar-button.emulate-active {
     background-color: rgb(163, 163, 163);
@@ -542,3 +548,16 @@ span.toolbar-select-container.toolbar-item.warning {
     padding: 0 5px 0 0;
     margin-right: 1px;
 }
+
+.toolbar-shadow > .toolbar-item {
+    display: none;
+}
+
+.toolbar-shadow > .toolbar-item:nth-child(5),
+.toolbar-shadow > .toolbar-item:nth-child(6),
+.toolbar-shadow > .toolbar-item:nth-child(7),
+.toolbar-shadow > .toolbar-item:nth-child(8),
+.toolbar-shadow > .toolbar-item:nth-child(9) {
+    display: flex;
+}
+

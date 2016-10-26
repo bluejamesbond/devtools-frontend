@@ -59,6 +59,7 @@
     overflow: visible;
     width: 100%;
     background-color: #f3f3f3;
+    display: none;
 }
 
 .tabbed-pane-header-contents {
@@ -151,7 +152,7 @@
 
 .tabbed-pane-header-tabs-drop-down-container > .glyph {
     height: 26px;
-    background-color: hsla(0,0%,20%,1);
+    background-color: hsla(0, 0%, 20%, 1);
     -webkit-mask-image: url(Images/toolbarButtonGlyphs.png);
     -webkit-mask-position: -68px -143px;
     -webkit-mask-size: 352px 168px;
@@ -159,10 +160,12 @@
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.1) {
-.tabbed-pane-header-tabs-drop-down-container > .glyph {
-    -webkit-mask-image: url(Images/toolbarButtonGlyphs_2x.png);
+    .tabbed-pane-header-tabs-drop-down-container > .glyph {
+        -webkit-mask-image: url(Images/toolbarButtonGlyphs_2x.png);
+    }
 }
-} /* media */
+
+/* media */
 
 .tabbed-pane-header-tabs-drop-down-container:hover {
     background-color: rgb(229, 229, 229);
